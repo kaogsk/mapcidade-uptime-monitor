@@ -1,0 +1,30 @@
+{
+  "name": "mapcidade-uptime-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Monitors a set of services for outages, and when one crosses a failure threshold, collects evidence and sends an incident alert to a webhook (or logs it in dry-run when no webhook is configured).",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "test": "vitest run",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^24.0.0",
+    "@types/supertest": "^6.0.2",
+    "eslint": "^9.39.0",
+    "supertest": "^7.0.0",
+    "typescript-eslint": "^8.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
+  }
+}
