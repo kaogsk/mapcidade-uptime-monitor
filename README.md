@@ -28,7 +28,7 @@ Click "Report failure" on any service 3 times in a row to trigger an incident (w
 
 ### Demo
 
-Screenshot/GIF of the dashboard + a triggered incident will be linked here.
+**Live:** https://mapcidade-uptime-monitor.vercel.app (deployed as a Vercel serverless function; state is kept in memory and only persists within one warm instance — 3 "Report failure" clicks in a row on the same warm instance does trigger a real incident, verified on the deployed URL, but a real multi-instance deployment of this architecture would move state to a shared store).
 
 ### What I learned / engineering decisions
 
@@ -62,7 +62,7 @@ Clique em "Report failure" em qualquer serviço 3 vezes seguidas pra disparar um
 
 ### Demo
 
-Screenshot/GIF do painel + um incidente disparado será linkado aqui.
+**Ao vivo:** https://mapcidade-uptime-monitor.vercel.app (deploy como função serverless da Vercel; estado fica em memória e só persiste dentro de uma instância "quente" — 3 cliques seguidos em "Report failure" na mesma instância disparam um incidente de verdade, verificado na URL publicada, mas um deploy real multi-instância dessa arquitetura moveria o estado pra um armazenamento compartilhado).
 
 ### O que aprendi / decisões de engenharia
 
